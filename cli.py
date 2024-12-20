@@ -77,3 +77,10 @@ def manage_meals():
                 print("Meal added.")
             else:
                 print("Category not found. Add the category first.")
+        elif choice == "2":
+            meal_id = input("Enter meal ID to delete: ").strip()
+            if meal_id.isdigit():
+                Meal.delete_meal(int(meal_id))
+                print("Meal deleted.")
+            else:
+                print("Invalid ID. Please enter a numeric value.")

@@ -64,4 +64,16 @@ def manage_meals():
         print("4. Find Meal by ID")
         print("5. Go Back")
         choice = input("Enter choice: ")
-       
+        if choice == "1":
+            name = input("Enter meal name: ").strip()
+            date_str = input("Enter meal date (YYYY-MM-DD): ").strip()
+            date = validate_date(date_str)
+            if not date:
+                continue
+            category_name = input("Enter category name: ").strip()
+            category = MealCategory.find_by_name(category_name)
+            if category:
+                Meal.add_meal(name, date, category[0])
+                print("Meal added.")
+            else:
+                print("Category not found. Add the category first.")

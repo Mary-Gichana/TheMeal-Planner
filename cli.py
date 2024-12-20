@@ -30,3 +30,8 @@ def manage_categories():
                 print("Category added.")
             else:
                 print("Category name cannot be empty.")
+
+        elif choice == "2":
+            name = input("Enter category name to delete: ").strip()
+            MealCategory.delete_category(name)
+            print("Category deleted.")

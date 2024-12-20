@@ -22,3 +22,11 @@ def manage_categories():
         print("4. Find Category by ID")
         print("5. Go Back")
         choice = input("Enter choice: ")
+
+        if choice == "1":
+            name = input("Enter category name: ").strip()
+            if name:
+                MealCategory.add_category(name)
+                print("Category added.")
+            else:
+                print("Category name cannot be empty.")

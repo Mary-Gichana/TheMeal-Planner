@@ -25,8 +25,17 @@ class MealCategory:
             cursor = conn.cursor()
             cursor.execute('SELECT * FROM mealcategory')
             return cursor.fetchall()
+        
+    def find_by_name(name):
+        with sqlite3.connect(DATABASE_NAME) as conn:
+            cursor = conn.cursor()
+            cursor.execute('SELECT * FROM mealcategory WHERE name = ?', (name,))
+            return cursor.fetchone()
+
     def find_by_id(category_id):
         with sqlite3.connect(DATABASE_NAME) as conn:
             cursor = conn.cursor()
             cursor.execute('SELECT * FROM mealcategory WHERE id = ?', (category_id,))
             return cursor.fetchone()
+        
+    

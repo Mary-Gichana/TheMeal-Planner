@@ -91,3 +91,13 @@ def manage_meals():
                     print(meal)
             else:
                 print("No meals found.")
+        elif choice == "4":
+            meal_id = input("Enter meal ID: ").strip()
+            if meal_id.isdigit():
+                meal = Meal.find_by_id(int(meal_id))
+                if meal:
+                    print(meal)
+                else:
+                    print("Meal not found.")
+            else:
+                print("Invalid ID. Please enter a numeric value.")

@@ -84,3 +84,10 @@ def manage_meals():
                 print("Meal deleted.")
             else:
                 print("Invalid ID. Please enter a numeric value.")
+        elif choice == "3":
+            meals = Meal.find_all()
+            if meals:
+                for meal in meals:
+                    print(meal)
+            else:
+                print("No meals found.")

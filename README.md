@@ -9,10 +9,10 @@ The Meal Planner CLI Application is a minimalist yet functional tool designed to
 
 ## Features
 
-Add, view ,delete meals and mealcategories
-Categorize meals by meal types (e.g., Breakfast, Lunch, Dinner)
-Search functionality to find specific meals and meal categories
-User-friendly CLI interface
+- Add, view ,delete meals and mealcategories
+- Categorize meals by meal types (e.g., Breakfast, Lunch, Dinner)
+- Search functionality to find specific meals and meal categories
+- User-friendly CLI interface
 
 ## How to Use
 

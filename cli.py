@@ -105,3 +105,11 @@ def manage_meals():
             break
         else:
             print("Invalid choice.")
+def main():
+    while True:
+        print("\n==== Meal Planner ====")
+        print("1. Manage Categories")
+        print("2. Manage Meals")
+        print("3. Exit")
+        choice = input("Enter choice: ")
+

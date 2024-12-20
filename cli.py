@@ -41,5 +41,14 @@ def manage_categories():
                     print(category)
             else:
                 print("No categories found.")
-
+        elif choice == "4":
+            category_id = input("Enter category ID: ").strip()
+            if category_id.isdigit():
+                category = MealCategory.find_by_id(int(category_id))
+                if category:
+                    print(category)
+                else:
+                    print("Category not found.")
+            else:
+                print("Invalid ID. Please enter a numeric value.")
         

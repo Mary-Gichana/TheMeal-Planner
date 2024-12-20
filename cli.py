@@ -12,3 +12,13 @@ def validate_date(date_str):
     except ValueError:
         print("Invalid date format. Use YYYY-MM-DD.")
         return None
+
+def manage_categories():
+    while True:
+        print("\n==== Manage Meal Categories ====")
+        print("1. Add Category")
+        print("2. Delete Category")
+        print("3. List Categories")
+        print("4. Find Category by ID")
+        print("5. Go Back")
+        choice = input("Enter choice: ")

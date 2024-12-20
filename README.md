@@ -32,3 +32,15 @@ Basic understanding of how to use a terminal or command line
    then pipenv shell
 4. run the application
    python cli.py
+
+## Technologies Used
+
+Python 3.8+
+SQLite (for data persistence)
+CLI
+
+## Support and Contact Details
+
+If you have any questions, suggestions, or need assistance, please contact:
+
+Email: marygichana95@gmail.com

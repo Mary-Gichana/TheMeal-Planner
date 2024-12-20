@@ -112,4 +112,8 @@ def main():
         print("2. Manage Meals")
         print("3. Exit")
         choice = input("Enter choice: ")
+        if choice == "1":
+            manage_categories()
+        elif choice == "2":
+            manage_meals()
 

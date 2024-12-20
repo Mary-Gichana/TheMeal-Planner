@@ -55,4 +55,13 @@ def manage_categories():
             break
         else:
             print("Invalid choice.")
-        
+def manage_meals():
+     while True:
+        print("\n==== Manage Meals ====")
+        print("1. Add Meal")
+        print("2. Delete Meal")
+        print("3. List Meals")
+        print("4. Find Meal by ID")
+        print("5. Go Back")
+        choice = input("Enter choice: ")
+       

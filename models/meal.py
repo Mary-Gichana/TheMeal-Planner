@@ -7,3 +7,7 @@ class Meal:
         self.name = name
         self.date = date
         self.mealcategory_id = mealcategory_id
+
+   
+    def __repr__(self):
+        return f"Meal({self.id}, {self.name}), {self.date}, {self.mealcategory_id})"

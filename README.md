@@ -18,8 +18,8 @@ The Meal Planner CLI Application is a minimalist yet functional tool designed to
 
 ### Requirements
 
-A computer with Python 3.8+ installed
-Basic understanding of how to use a terminal or command line
+- A computer with Python 3.8+ installed
+- Basic understanding of how to use a terminal or command line
 
 ### Installation Process
 
@@ -28,16 +28,20 @@ Basic understanding of how to use a terminal or command line
 2. Navigate to the project directory:
    cd Meal-planner
 3. Install the required dependencies:
-   pipenv install
-   then pipenv shell
+   - pipenv install
+   - pipenv shell
 4. run the application
    python cli.py
+5. Choose from the main menu
+   - manage categories - choice 1: there are options if you want to add, delete, a list of meal categories and find mealcategory by id
+   - manage meals - choice 2: there are options if you want to add, delete a meal, view all meals and find meal by id
+   - Exit - choice 3: if want to exit the CLI
 
 ## Technologies Used
 
-Python 3.8+
-SQLite (for data persistence)
-CLI
+- Python 3.8+
+- SQLite (for data persistence)
+- CLI (Command Line Interface)
 
 ## Support and Contact Details
 

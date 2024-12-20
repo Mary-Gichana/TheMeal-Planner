@@ -18,3 +18,9 @@ class Meal:
             cursor.execute('INSERT INTO meals (name, date, mealcategory_id) VALUES (?, ?, ?)', 
                            (name, date, mealcategory_id))
             conn.commit()
+
+    def delete_meal(meal_id):
+        with sqlite3.connect(DATABASE_NAME) as conn:
+            cursor = conn.cursor()
+            cursor.execute('DELETE FROM meals WHERE id = ?', (meal_id,))
+            conn.commit()

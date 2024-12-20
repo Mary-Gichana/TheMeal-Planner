@@ -51,4 +51,8 @@ def manage_categories():
                     print("Category not found.")
             else:
                 print("Invalid ID. Please enter a numeric value.")
+        elif choice == "5":
+            break
+        else:
+            print("Invalid choice.")
         
